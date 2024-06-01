@@ -5,7 +5,7 @@ import { z } from "zod";
 export const env = createEnv({
   extends: [vercel()],
   shared: {
-    DOWNLOAD_API_URL: z.string().url(),
+    DOWNLOAD_API_URL:("https://v1.api.ani.rohi.dev/api/dramacool"),
     NODE_ENV: z
       .enum(["development", "production", "test"])
       .default("development"),
